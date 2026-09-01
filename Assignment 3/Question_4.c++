@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+class student{
+    public:
+
+    static int count;
+
+    student(){
+        count++;
+    }
+};
+
+int student::count = 0;
+
+int main(){
+
+    student s1;
+    student s2;
+    student s3;
+
+    cout<<"Number of objects are "<<student::count<<endl;
+
+    return 0;
+}
